@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa História</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Nossa História 🤍</h1>
+
+    <div class="texto">
+Bom, no início da nossa história tudo parecia confuso, nós tínhamos acabado de nos conhecer, porque havíamos caído na mesma sala. Algumas pessoas percebiam o que rolava entre nós, mas nós dois estávamos com medo de admitir.
+
+Até que enfim o primeiro beijo veio, não foi perfeito, na verdade foi horrível kkkk, mas foi nosso. Depois disso o pedido de namoro veio, da maneira mais simples imaginável, mas tão verdadeiro, tão real e tão sincero.
+
+A partir daí nossa história começou, passamos por tantas coisas, tantos momentos e tantas lutas. Quem olha de fora vê apenas um casal que se ama. Mas quem nos conhece de verdade enxerga um casal que enfrentou até os pais para chegar aqui.
+
+E posso te dizer, eu enfrentaria tudo isso de novo só para ter você. Eu passaria por tudo de novo, meu amor, porque ter você vale muito a pena. Você é o meu mundo. Quando eu olho para você eu enxergo o futuro mais lindo e belo imaginável.
+
+E hoje, 4 anos se passaram. 4 anos que eu pude entender que o amor supera tudo. Hoje eu consigo entender plenamente o que Paulo escreveu aos Coríntios:
+
+“O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha. Não maltrata, não procura seus interesses, não se ira facilmente, não guarda rancor. O amor não se alegra com a injustiça, mas se alegra com a verdade. Tudo sofre, tudo crê, tudo espera, tudo suporta.”
+
+Você me fez entender o que é o verdadeiro amor, Santos. Eu vejo o cuidado de Deus comigo através da sua vida. Você é tudo o que eu sempre sonhei.
+
+Em qualquer missão, eu prefiro estar no seu time.
+Nós estamos com o modo duo ativado desde 11/03/2022.
+    </div>
+
+    <div class="pergunta">
+      Para ir para a próxima fase, você precisa me dizer:  
+      qual é o meu personagem favorito do GTA?
+    </div>
+
+    <input type="text" id="resposta" placeholder="Digite aqui...">
+    <button onclick="verificarResposta()">Avançar</button>
+
+    <p id="mensagemErro" class="erro"></p>
+
+  </div>
+
+  <script>
+    function verificarResposta() {
+      const resposta = document.getElementById("resposta").value.toLowerCase().trim();
+
+      if (resposta === "franklin") {
+        window.location.href = "nossa_jornada.html";
+      } else {
+        document.getElementById("mensagemErro").innerText =
+          "Hmm... parece que você esqueceu 👀 tenta de novo.";
+      }
+    }
+  </script>
+
+</body>
+</html>

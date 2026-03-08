@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase Futuro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        ✨ Fase Futuro
+    </header>
+
+    <div class="container">
+
+        <div class="texto">
+
+            <p>Se até aqui Deus escreveu capítulos tão lindos, o que Ele ainda tem preparado para nós deve ser ainda maior.</p>
+
+            <p>Quando penso no futuro, penso em um casamento firmado em Deus, em um altar onde promessas serão feitas diante d’Ele. Penso em um lar cheio de paz, respeito e presença do Senhor.</p>
+
+            <p>Penso nos nossos filhos, ensinando princípios, orando por eles e construindo uma família que glorifique o nome de Deus. Um amor que não será apenas sentimento, mas decisão diária.</p>
+
+            <p>O futuro ainda não chegou, mas ele já está sendo preparado. E enquanto ele não vem, continuamos confiando, amadurecendo e colocando Deus no centro.</p>
+
+        </div>
+
+        <div class="pergunta">
+            Você está disposto a construir tudo isso comigo?
+        </div>
+
+        <div class="botao">
+            <button onclick="mostrarVersiculo()">💖 Sim, todos os dias.</button>
+        </div>
+
+        <div class="versiculo-final" id="versiculoFinal">
+            Portanto deixará o homem a seu pai e a sua mãe, e unir-se-á à sua mulher, e serão uma só carne. <br><br>
+            Assim já não são mais dois, mas um só carne. Portanto o que Deus ajuntou, ninguém separa.
+        </div>
+
+    </div>
+
+    <footer>
+        🤍 Nosso futuro começa todos os dias.
+    </footer>
+
+<script>
+    function mostrarVersiculo() {
+
+    const versiculo = document.getElementById("versiculoFinal");
+
+    versiculo.style.display = "block";
+
+    setTimeout(() => {
+    versiculo.style.opacity = "1";
+    }, 50);
+
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso à Nossa História</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-box">
+        <h1>Bem-vindo 💍</h1>
+        <p class="subtitulo">
+            Algumas promessas só quem vive pode acessar.
+        </p>
+
+        <input type="text" id="apelido" placeholder="Digite o apelido que eu te dei">
+        <input type="text" id="data" placeholder="Digite a nossa data">
+
+        <button onclick="validarLogin()">Entrar</button>
+
+        <p id="mensagemErro" class="erro"></p>
+    </div>
+
+    <script>
+        const dadosCorretos = {
+            apelido: "santos",
+            data: "11/03/22"
+        };
+
+        function validarLogin() {
+            const apelido = document.getElementById("apelido").value.toLowerCase();
+            const data = document.getElementById("data").value;
+
+            if (apelido === dadosCorretos.apelido && data === dadosCorretos.data) {
+                window.location.href = "home.html";
+            } else {
+                document.getElementById("mensagemErro").innerText =
+                    "Ou você não é o meu amor, ou por alguns segundos vc se esqueceu.";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
