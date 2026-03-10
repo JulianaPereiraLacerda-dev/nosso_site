@@ -2,47 +2,45 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acesso à Nossa História</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosso Site</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <div class="login-box">
-        <h1>Bem-vindo 💍</h1>
-        <p class="subtitulo">
-            Algumas promessas só quem vive pode acessar.
-        </p>
+<div class="login-box">
 
-        <input type="text" id="apelido" placeholder="Digite o apelido que eu te dei">
-        <input type="text" id="data" placeholder="Digite a nossa data">
+<h1>Você é meu amor? 💍</h1>
 
-        <button onclick="validarLogin()">Entrar</button>
+<p class="subtitulo">
+Só quem é a razão do meu sorriso pode entrar.
+</p>
 
-        <p id="mensagemErro" class="erro"></p>
-    </div>
+<button onclick="entrar()">Sim</button>
 
-    <script>
-        const dadosCorretos = {
-            apelido: "santos",
-            data: "11/03/22"
-        };
+<button onclick="nao()">Não</button>
 
-        function validarLogin() {
-            const apelido = document.getElementById("apelido").value.toLowerCase();
-            const data = document.getElementById("data").value;
+<p id="msg" class="erro"></p>
 
-            if (apelido === dadosCorretos.apelido && data === dadosCorretos.data) {
-                window.location.href = "home.html";
-            } else {
-                document.getElementById("mensagemErro").innerText =
-                    "Ou você não é o meu amor, ou por alguns segundos vc se esqueceu.";
-            }
-        }
-    </script>
+</div>
+
+<script>
+
+function entrar(){
+window.location.href="home.html";
+}
+
+function nao(){
+document.getElementById("msg").innerText =
+"Então você definitivamente não deveria estar aqui 🤨";
+}
+
+</script>
 
 </body>
 
